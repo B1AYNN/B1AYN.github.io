@@ -11,6 +11,9 @@
             padding: 0;
             background-color: #000;
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -35,17 +38,24 @@
         }
 
         section {
+            flex: 1;
             padding: 20px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .social-media {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
         }
 
         .social-media a {
             display: block;
-            margin: 10px 0;
+            margin: 10px 15px;
         }
 
         footer {
@@ -62,8 +72,17 @@
         <h1>Hoş Geldiniz!</h1>
     </header>
 
+    <nav>
+        <a href="#">Anasayfa</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">Hizmetler</a>
+        <a href="#">İletişim</a>
+    </nav>
 
     <section>
+        <!-- Sayfa Ortasında Resim -->
+        <img src="path/to/your-image.jpg" alt="Resim Açıklaması" style="max-width: 100%; height: auto;">
+
         <h2>Merhaba Dünya!</h2>
         <p>Bu, basit bir HTML web sitesinin örneğidir. İstediğiniz gibi özelleştirebilirsiniz.</p>
 
